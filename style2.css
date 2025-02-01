@@ -1,0 +1,31 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 98%;
+    width: 98%;
+    background-image: linear-gradient(to bottom right,#F54EA2,yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    height: 97%;
+    width: 97%;
+    background-color: white;
+    border-radius: 40px;
+}
+.head{
+    background-image: linear-gradient(to bottom right,#F54EA2,yellow);
+    align-self: center;
+    width: 180px;
+    padding: 14px 0px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
