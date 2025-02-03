@@ -11,12 +11,18 @@ body{
     justify-content: center;
 }
 .main{
-    height: 97%;
+        height: 97%;
     width: 97%;
     background-color: white;
     border-radius: 40px;
 }
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
 .head{
+    float: left;
     background-image: linear-gradient(to bottom right,#F54EA2,yellow);
     align-self: center;
     width: 180px;
@@ -29,3 +35,69 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
+/* Dropdown Button */
+.dropbtn {
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 25px;
+    color: white;
+    display: block;
+    background-image: linear-gradient(to bottom right,#F54EA2,yellow);
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    opacity: 0;
+    transform: translateY(-10px); /* Move it up slightly */
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  pointer-events: none;
+    position: absolute;
+  border-radius: 35px;
+  min-width:80px;
+  height: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move it back to position */
+  pointer-events: auto; /* Allow interaction */
+}
+.drop{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right,#F54EA2,yellow);
+    color:white;
+    font-weight: 600;
+    border: none;
+    
+}
+.drop:hover{
+    height: 45px;
+    width: 45px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
