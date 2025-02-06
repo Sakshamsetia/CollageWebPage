@@ -16,19 +16,37 @@
             <div class="dropdown">
                 <button class="dropbtn" id="dropmain"><i class="fa-solid fa-images"></i></button>
                 <div class="dropdown-content">
-                    <button class="drop" id = "b1">1</button>
-                    <button class="drop" id = "b2">2</button>
-                    <button class="drop" id = "b3">3</button>
-                    <button class="drop" id = "b4">4</button>
+                    <button class="drop" id = "b1" onclick="one()">1</button>
+                    <button class="drop" id = "b2" onclick="two()">2</button>
+                    <button class="drop" id = "b3" onclick="three()">3</button>
+                    <button class="drop" id = "b4" onclick="four()">4</button>
                 </div>
             </div>
         </div>
         <div class="body">
-            <div class="img" id="i1"></div>
-            <div class="img" id="i2"></div>
-            <div class="img" id="i3"></div>
-            <div class="img" id="i4"></div>
+            <div class="img" id="i1"><a href = "https://www.youtube.com/" class = "edit">
+                <i class="fa-solid fa-pen"></i></a>
+                <input id="up1" type="file" accept="image/">
+                <label for="up1" class="upload">Upload Image</label>
+            </div>
+            <div class="img" id="i2"><a href = "https://www.youtube.com/" class = "edit">
+                <i class="fa-solid fa-pen"></i></a> 
+                <input id="up2" type="file" accept="image/" hidden>
+                <label for="up1" class="upload">Upload Image</label>
+            </div>
+            <div class="img" id="i3"><a href = "https://www.youtube.com/" class = "edit">
+                <i class="fa-solid fa-pen"></i></a>
+                <input id="up3" type="file" accept="image/">
+                <label for="up1" class="upload">Upload Image</label>
+            </div>
+            <div class="img" id="i4"><a href = "https://www.youtube.com/" class = "edit">
+                <i class="fa-solid fa-pen"></i></a>
+                
+                <input id="up4" type="email" accept="image/">
+                <label for="up1" class="upload">Upload Image</label>
+            </div>
         </div>
     </div> 
+    <script src="./script.js"></script>
 </body>
 </html>

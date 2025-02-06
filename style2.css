@@ -97,7 +97,7 @@ body{
     color:white;
     font-weight: 600;
     border: none;
-    
+
 }
 .drop:hover{
     height: 45px;
@@ -114,8 +114,10 @@ body{
     border-radius: 40px;
     display: flex;
     align-items:stretch;
+    justify-content: space-evenly;
 }
 .img{
+    position: relative;
     margin: 3%;
     margin-top: 5%;
     width: 20%;
@@ -123,5 +125,57 @@ body{
     background-color: rgb(252, 251, 251);
     border-radius: 10%;
 }
+.edit{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom:  -35px;
+    right: -20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(to bottom right,#7017EA,#EA5050);
+    text-decoration: none;
+}
+.edit i{
+    color: white;
+    font-size: 20px;
+    
+}
+.edit:hover{
+    background-image: linear-gradient(to bottom right,#EA5050,#7017EA);
+    height: 60px;
+    width: 60px;
+}
+.edit:hover i{
+    font-size: 26px;
+}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+input{
+    display: none;
+}
+label{
+    height: 40px;
+    width: 100%;
+}
+.upload {
+    position: absolute;
+    bottom: -15px; /* Adjusted below the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(254, 203, 0); /* Green */
+    color: white;
+    border-radius:  0 0 15px  15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 40px;
+}
+
+.upload:hover {
+    background-color: #F54EA2; /* Darker green */
+}
