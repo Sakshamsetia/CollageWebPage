@@ -17,6 +17,7 @@ body{
     width: 97%;
     background-color: rgb(252, 251, 251);;
     border-radius: 40px;
+    overflow: hidden;
 }
 
 .top{
@@ -117,6 +118,7 @@ body{
     justify-content: space-evenly;
 }
 .img{
+    display: flex;
     position: relative;
     margin: 3%;
     margin-top: 5%;
@@ -124,6 +126,7 @@ body{
     height: 75%;
     background-color: rgb(252, 251, 251);
     border-radius: 10%;
+    background-size: 100%;
 }
 .edit{
     z-index: 1;
@@ -175,7 +178,13 @@ label{
     transition: 0.3s;
     line-height: 40px;
 }
-
 .upload:hover {
     background-color: #F54EA2; /* Darker green */
+}
+
+img{
+    align-self: center;
+    justify-self: center;
+    max-width: 250px;
+    max-height: 350px;
 }
