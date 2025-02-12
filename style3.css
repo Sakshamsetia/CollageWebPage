@@ -1,0 +1,66 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 98%;
+    width: 98%;
+    background-image: linear-gradient(to bottom right,#F54EA2,yellow);
+    display: flex;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    right: -250px;
+    transform: translateX(250px);
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-out;
+
+}
+.close{
+    right : 0px;
+}
+.open{
+    transform: translateX(0px);
+    right: 0px;
+}
+.edit{
+    position: absolute;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(to bottom right,#7017EA,#EA5050);
+    text-decoration: none;
+    margin: 10px;
+}
+.edit i{
+    color: white;
+    font-size: 20px;
+    
+}
+.edit:hover{
+    background-image: linear-gradient(to bottom right,#EA5050,#7017EA);
+    height: 60px;
+    width: 60px;
+}
+.edit:hover i{
+    font-size: 26px;
+}
+.buttonContainer{
+    position: fixed;
+    transform: translateX(0);
+    right: 5px;
+    top: 20px;
+    transition: transform 0.3s ease-out;
+}
+

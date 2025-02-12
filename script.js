@@ -146,3 +146,23 @@ function Upload4(){
 
     file4.readAsDataURL(image4);
 }
+
+function sideShow(){
+    document.getElementById("sidebar").classList.toggle("open");
+    document.getElementById("sidebar").classList.remove("close");
+    document.getElementById("editor").setAttribute("onclick","sidehide()");
+    // document.getElementById("buttonC").classList.toggle("button-move");
+    // document.getElementById("buttonC").classList.remove("butto-not");
+    document.getElementById("buttonC").style.transform = "translateX(-250px)"; // Adjust based on sidebar width
+
+}
+function sidehide(){
+    document.getElementById("sidebar").classList.remove("open");
+    document.getElementById("sidebar").classList.toggle("close");
+    document.getElementById("editor").setAttribute("onclick","sideShow()");
+    document.getElementById("buttonC").style.transform = "translateX(0px)"; // Reset to original position
+
+    // document.getElementById("buttonC").classList.remove("butto-move");
+    // document.getElementById("buttonC").classList.toggle("button-not");
+
+}
